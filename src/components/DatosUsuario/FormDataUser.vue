@@ -293,6 +293,7 @@ export default {
       return errorList;
     },
     async submit() {
+      this.errorsLst = [];
       if (this.validate()) {
         this.dialogTitle = "Campos validados correctamente";
         this.dialog = true;
